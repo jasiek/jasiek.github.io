@@ -1,0 +1,175 @@
+@use "variables" as *;
+
+// ============================================================
+// Wrapper (centers content)
+// ============================================================
+
+.wrapper {
+  max-width: $content-width;
+  margin: 0 auto;
+  padding: 0 $spacing-unit;
+
+  @media (max-width: 600px) {
+    padding: 0 1rem;
+  }
+}
+
+// ============================================================
+// Site Header
+// ============================================================
+
+.site-header {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid $color-border;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}
+
+.site-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: $color-text;
+  text-decoration: none;
+  letter-spacing: -0.01em;
+
+  &:hover {
+    color: $color-text;
+    text-decoration: none;
+  }
+}
+
+.site-nav {
+  a {
+    font-size: 0.9rem;
+    color: $color-text-secondary;
+    margin-left: 1.5rem;
+
+    &:hover {
+      color: $color-text;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+// ============================================================
+// Main Content
+// ============================================================
+
+.content {
+  max-width: $content-width;
+  margin: 0 auto;
+  padding: 2.5rem $spacing-unit;
+
+  @media (max-width: 600px) {
+    padding: 2rem 1rem;
+  }
+}
+
+// ============================================================
+// Post Layout
+// ============================================================
+
+.post-header {
+  margin-bottom: 2rem;
+}
+
+.post-title,
+.page-title {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+
+  @media (max-width: 600px) {
+    font-size: 1.75rem;
+  }
+}
+
+.post-meta {
+  color: $color-text-secondary;
+  font-size: 0.9rem;
+}
+
+.post-content,
+.page-content {
+  h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h4, h5, h6 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+// ============================================================
+// Home / Post List
+// ============================================================
+
+.post-list {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid $color-border;
+
+    &:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+
+.post-link-heading {
+  font-size: 1.35rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+
+  a {
+    color: $color-text;
+
+    &:hover {
+      color: $color-link;
+      text-decoration: none;
+    }
+  }
+}
+
+.post-excerpt {
+  color: $color-text-secondary;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+// ============================================================
+// Site Footer
+// ============================================================
+
+.site-footer {
+  padding: 2rem 0;
+  border-top: 1px solid $color-border;
+
+  p {
+    color: $color-text-secondary;
+    font-size: 0.85rem;
+    margin-bottom: 0;
+  }
+}

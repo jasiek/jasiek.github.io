@@ -1,0 +1,53 @@
+@use "variables" as *;
+
+// ============================================================
+// Inline Code
+// ============================================================
+
+code {
+  font-family: $font-code;
+  font-size: 0.875em;
+  background-color: $color-code-bg;
+  padding: 0.15em 0.35em;
+  border-radius: 3px;
+}
+
+// ============================================================
+// Code Blocks
+// ============================================================
+
+div.highlighter-rouge {
+  margin-bottom: $spacing-unit;
+}
+
+div.highlighter-rouge,
+figure.highlight {
+  background-color: $color-code-block-bg;
+  border: 1px solid $color-border;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+pre.highlight {
+  margin: 0;
+  padding: 1rem 1.25rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+
+  code {
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: inherit;
+  }
+}
+
+.highlight {
+  background-color: $color-code-block-bg;
+
+  pre {
+    background-color: transparent;
+  }
+}

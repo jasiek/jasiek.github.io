@@ -1,0 +1,25 @@
+title: "journal of recrational computer science"
+description: "random things which interest me"
+url: ""
+baseurl: ""
+
+permalink: /:year/:month/:day/:title/
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    default_lang: plaintext
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Gemfile~
+  - .tool-versions
+  - README.md
+  - vendor
